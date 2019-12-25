@@ -630,5 +630,8 @@ footer {
         padding-top: 28px;
     }
 
+    .slider {
+        display: none;
+    }
 
 }
