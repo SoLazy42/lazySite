@@ -439,6 +439,18 @@ footer {
     padding-top: 28px;
 }
 
+.hamburger_button {
+    display: none;
+}
+
+.hamburger_button div {
+    width: 30px;
+    height: 5px;
+    background: #0d2e69;
+    margin-bottom: 10px;
+
+}
+
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
@@ -448,6 +460,27 @@ footer {
 
     form {
         display: none;
+    }
+    
+    header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .logotype {
+        margin-left: 15px;
+    }
+
+    .hamburger_button {
+        width: 50px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: 0 0;
+        border: 0;
     }
 
     .headline h1 {
