@@ -19,6 +19,10 @@ header {
     justify-content: flex-end;
 }
 
+.hidden_menu {
+    display: none;
+}
+
 .bot_nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -454,10 +458,28 @@ footer {
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
-    nav {
+    nav .top_nav {
         display: none;
     }
 
+    nav .bot_nav {
+        display: none;
+    }
+
+    .hidden_nav {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        position: relative;
+        right: -60%;
+    }
+
+    .hidden_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     form {
         display: none;
     }
@@ -466,6 +488,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         padding: 0;
+        overflow: hidden;
     }
 
     .logotype {

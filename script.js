@@ -2,7 +2,9 @@
 
 const leftButton = document.getElementById('leftButton'),
 	  rightButton = document.getElementById('rightButton'),
-	  slide = document.querySelectorAll('.slide');
+	  slide = document.querySelectorAll('.slide'),
+	  hamburgerButton = document.querySelector('.hamburger_button'),
+	  hiddenNav = document.querySelector('.hidden_nav');
 
 let   positionCounter = 0;
 
@@ -18,7 +20,6 @@ leftButton.addEventListener('click', () => {
 
 	for (let i = 0; i < 3; i++) {
 		slide[i].style.left = `${positionCounter}px`;
-		console.log(slide[i].style.left);
 	}
 
 });
@@ -34,7 +35,13 @@ rightButton.addEventListener('click', () => {
 
 	for (let i = 0; i < 3; i++) {
 		slide[i].style.left = `${positionCounter}px`;
-		console.log(slide[i].style.left);
 	}
 	
+})
+
+hamburgerButton.addEventListener('click', () => {
+	if (hiddenNav.style.right !== `-60%`)
+		hiddenNav.style.right = `-60%`;
+	else
+		hiddenNav.style.right = `0%`;	
 })
