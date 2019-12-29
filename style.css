@@ -465,21 +465,46 @@ footer {
     nav .bot_nav {
         display: none;
     }
-
-    .hidden_nav {
-        display: flex;
-        align-items: center;
+    
+   .hidden_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 500px;
+        transition: left 0.5s;
         width: 200px;
-        position: relative;
-        right: -60%;
+        height: 100vh;
     }
 
     .hidden_menu {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        background: gray;
+        height: 100%;
+        width: 100%;
     }
-    
+
+    .rev {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close_button {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px 10px 0;
+    }
+
+    .rev a {
+        font-size: 18px;
+        padding: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
     form {
         display: none;
     }
@@ -488,7 +513,6 @@ footer {
         align-items: center;
         justify-content: space-between;
         padding: 0;
-        overflow: hidden;
     }
 
     .logotype {

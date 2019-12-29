@@ -4,7 +4,8 @@ const leftButton = document.getElementById('leftButton'),
 	  rightButton = document.getElementById('rightButton'),
 	  slide = document.querySelectorAll('.slide'),
 	  hamburgerButton = document.querySelector('.hamburger_button'),
-	  hiddenNav = document.querySelector('.hidden_nav');
+	  hiddenNav = document.querySelector('.hidden_nav'),
+	  closeButton = document.getElementById('close_button');
 
 let   positionCounter = 0;
 
@@ -40,8 +41,9 @@ rightButton.addEventListener('click', () => {
 })
 
 hamburgerButton.addEventListener('click', () => {
-	if (hiddenNav.style.right !== `-60%`)
-		hiddenNav.style.right = `-60%`;
-	else
-		hiddenNav.style.right = `0%`;	
+	hiddenNav.style.left =  `270px`;
+})
+
+closeButton.addEventListener('click', () => {
+	hiddenNav.style.left =  `500px`;
 })
