@@ -472,7 +472,7 @@ footer {
         top: 0;
         bottom: 0;
         right: 0;
-        left: 500px;
+        left: 100%;
         transition: left 0.5s;
         width: 200px;
         height: 100vh;
@@ -573,7 +573,7 @@ footer {
     .about p {
         color: #151515;
         font-family: "Roboto - Thin";
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 400;
         line-height: 25px;
         margin-bottom: 67px;
