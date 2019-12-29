@@ -41,9 +41,9 @@ rightButton.addEventListener('click', () => {
 })
 
 hamburgerButton.addEventListener('click', () => {
-	hiddenNav.style.left =  `58%`;
+	hiddenNav.style.right =  `0`;
 })
 
 closeButton.addEventListener('click', () => {
-	hiddenNav.style.left =  `100%`;
+	hiddenNav.style.right =  `-100%`;
 })

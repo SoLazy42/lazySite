@@ -471,9 +471,8 @@ footer {
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 0;
-        left: 100%;
-        transition: left 0.5s;
+        right: -100%;
+        transition: right 0.5s;
         width: 200px;
         height: 100vh;
     }
