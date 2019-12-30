@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header id="home">
             <div class="logotype">
                 <img src="img/logo.png" alt="Logo">
             </div>
@@ -24,8 +24,8 @@
                     <span class="number">123.456.7890</span>
                 </div>
                 <div class="bot_nav">
-                    <a href="#">home</a>
-                    <a href="#">about us</a>
+                    <a href="#home">home</a>
+                    <a href="#about">about us</a>
                     <a href="#">cases we handle</a>
                     <a href="#">faq</a>
                     <a href="#">blog</a>
@@ -41,15 +41,15 @@
         <nav class="hidden_nav">
             <div class="hidden_menu">
                 <div class="close_button">
-                    <button id="close_button">close</button>
+                    <button id="close_button">X</button>
                 </div>
                 <div class="rev">
-                    <a href="#">home</a>
-                    <a href="#">about us</a>
+                    <a href="#home">home</a>
+                    <a href="#about">about us</a>
                     <a href="#">cases we handle</a>
                     <a href="#">faq</a>
                     <a href="#">blog</a>
-                    <a href="#">contact</a>
+                    <a href="#contact">contact</a>
                 </div>
             </div>
         </nav>
@@ -75,7 +75,7 @@
                     </div>
                 </form>
             </section>
-            <section class="about_us">
+            <section class="about_us" id="about">
                 <div class="photo">
                     <img src="img/photo.png" alt="Portrait">
                 </div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h6>Contact US</h6>
                 <p>
                     Address: Contrary to popular belief &nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp Email: lorem@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp Phone Number: 123.456.7890
